@@ -78,6 +78,16 @@ body, html {
   text-align: center;
   color: ghostwhite;
 }
+
+#gist {
+    float: left;
+    width:50%;
+}
+#demo {
+    float: right;
+    width: 50%;
+}
+
 /*
 .caption span.border {
   background-color: #111;
@@ -99,72 +109,70 @@ body, html {
     </HEAD>
     <body>
         <div class="bgimg-1">
-            <div class="caption">
                 <h1>D. R. Walker</h1>
                 <h4>AUTHOR OF</h4>
                 <div style="text-align:center">
                     <img src="images\Incessant_SC_19_05-08-0001.png" height="550" width="880">
                 </div>
-            </div>
         </div>
-        <div style="background-color:ghostwhite; text-align:center; padding:20px; border:10px double dimgray;">
+        <div style="background: linear-gradient(45deg, ghostwhite, grey); text-align:center; padding:20px; border:5px double black;">
             <p style="text-align:justify; font-family:Garamond; font-size:30px; text-shadow:1px 1px 1px #474747; color:black;">D. R. Walker is a Jack-of-all-trades that loves his family...and his city. Incessant is just the first book of many in his Incessant series, so be sure to follow him on social media for updates on new releases!</p>
         </div>
         <div class="bgimg-2">
-            <div class="row">
-                <div class="col-sm">
-                    
-                </div>
-                <div class="col-sm">
-                    <p style="font-family:Garamond; font-size:24px; text-align:justify; color:ghostwhite; text-shadow: 3px 5px 2px #474747;">
-                        Life is too short…or is it? For Deacon Russell, it seems to have been extended indefinitely. Journey with this average-joe on a trip that will take you through time and reality itself. He was unwillingly placed in this situation where each reality he visits is vastly different and he encounters different versions of people he knew from his home.
-                        This enthralling science-fiction adventure is highly thought provoking, action packed, and full of enough cliffhangers to give Silvester Stallone the chills. It also has tongue twisters and tricks of the pen that truly makes for a fun read.
-                        Where will Deacon go to next? What kind of situation will he be in? Will he ever find his original reality and finally reunite with his loving family?  Or will he be forever stuck, winding through reality in his Incessant existence?
-                    </p>
-                </div>
-                <div class="col-sm" style="padding:60px 20px;">
-                    <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm" style="column-width: 100px;">
 
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
+                    </div>
+                    <div class="col-sm-8" style="padding:60px 20px; column-width: inherit;">
+                        <p id="gist" style="font-family:Garamond; font-size:24px; text-align: justify; color:ghostwhite; text-shadow: 3px 5px 2px #474747; overflow: initial, scroll;">
+                            Life is too short…or is it? For Deacon Russell, it seems to have been extended indefinitely. Journey with this average-joe on a trip that will take you through time and reality itself. He was unwillingly placed in this situation where each reality he visits is vastly different and he encounters different versions of people he knew from his home.
+                            This enthralling science-fiction adventure is highly thought provoking, action packed, and full of enough cliffhangers to give Silvester Stallone the chills. It also has tongue twisters and tricks of the pen that truly makes for a fun read.
+                            Where will Deacon go to next? What kind of situation will he be in? Will he ever find his original reality and finally reunite with his loving family?  Or will he be forever stuck, winding through reality in his Incessant existence?
+                        </p>
+                        <div id="demo" class="carousel slide" data-ride="carousel">
 
-                        <!-- The slideshow -->
-                        <div class="carousel-inner" style="text-align:center;">
-                            <div class="carousel-item active">
-                                <img src="images\100_0011.JPG" alt="That_Dude" class="ImageSize";>
-                                <div class="carousel-caption">
-                                    <h4>D. R. Walker</h4>
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+
+                            <!-- The slideshow -->
+                            <div class="carousel-inner" style="text-align:center;">
+                                <div class="carousel-item active">
+                                    <img src="images\100_0011.JPG" alt="That_Dude" class="ImageSize" ;>
+                                    <div class="carousel-caption">
+                                        <h4>D. R. Walker</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images\Incessant_PCD1_18_12-21(1).jpg" alt="Hot_New_Book!" class="ImageSize" ;>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images\view-of-gastonia.jpg." alt="Gastonia" class="ImageSize" ;>
+                                    <div class="carousel-caption">
+                                        <h4>Gastonia, NC</h4>
+                                        <p>Vintage view of his city.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="images\Incessant_PCD1_18_12-21(1).jpg" alt="Hot_New_Book!" class="ImageSize";>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images\view-of-gastonia.jpg." alt="Gastonia" class="ImageSize";>
-                                <div class="carousel-caption">
-                                    <h4>Gastonia, NC</h4>
-                                    <p>Vintage view of his city.</p>
-                                </div>
-                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
                         </div>
-
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-
                     </div>
                 </div>
             </div>
         </div>
-        <div style="background-color:ghostwhite; text-align:center; padding:10px 20px; border: 10px double dimgray;">
+        <div style="background: linear-gradient(45deg, ghostwhite, grey); text-align:center; padding:10px 20px; border: 5px double black;">
             <div class="icon-bar">
                 <a target="_blank" href="https://www.facebook.com/DRWalker-396923124491087/?modal=admin_todo_tour"><i class="fa fa-facebook-square"></i></a>
                 <a target="_blank" href="https://twitter.com/DRWalker14"><i class="fa fa-twitter-square"></i></a>
